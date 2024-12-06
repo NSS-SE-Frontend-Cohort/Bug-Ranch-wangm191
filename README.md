@@ -76,11 +76,11 @@ Your journey will take you through the wildness of the American Midwest and acro
 ```
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+   > when hireDrovers(cattlToDrive) func is run in main.js, drovers variable is returned as an array of drover objects, which includes id Number, firstName, lastName and gender String variables (matching database.drovers)
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+   > `drover` is an individual object of that contains one `drover`object with an id, firstName, lastName and gender, while `drovers` is the array containing all of the `drover` objects that were stored in `drovers` variable earlier.
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+   > https://www.loom.com/share/0b769cb3c7cf469e938f752d7481fab3 
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
@@ -88,11 +88,11 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
+   > Starting from the beginning, loop and add string `"forest"` into `journey` until `forestNumber` counter is greater than `area.forest` variable (the forest area), everytime loop is done `forestNumber` counter increases by 1.
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+   > `database` variable contains multiple arrays of object `drovers` and `cattleTypes` data that we can use. 
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
+   > `herdSize` is a parameter that `hireDrovers()` accepts, it accepts an argument (const value 50), it represents the amount of cattle on the ranch, aka `herdSize`. 
 
 ## When You Are Done
 
